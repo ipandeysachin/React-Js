@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: royalblue;">
+    <h1 style="text-align: center; color: whitesmoke;"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Explicabo deleniti accusamus provident similique natus tempore id officia dicta nobis distinctio dolores
+        excepturi totam ipsa et iure, voluptate accusantium perspiciatis debitis? </h1>
+    <div class="container">
+        <div class="box-1 a"></div>
+        <div class="box-2 a"></div>
+        <div class="box-3 a"></div>
+        <div class="box-4 a"></div>
+        <div class="box-5 a"></div>
+    </div>
+
+    <section class="section-1"> <!-- Block Level Element -->
+        <div class="child"></div>
+    </section>
+
+    <section class="section-2"> <!-- Block Level Element -->
+    </section>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium earum ab soluta deserunt ipsa, officiis
+        blanditiis delectus neque illo, facere modi repudiandae perferendis consequatur nisi voluptatibus. Obcaecati
+        nihil quis esse animi, recusandae provident reiciendis labore modi numquam tenetur aspernatur veritatis
+        perspiciatis corrupti maxime? Earum voluptas molestiae accusantium aperiam voluptatibus, illum magnam quis a,
+        asperiores deleniti fugiat mollitia, corporis aut tempore obcaecati vero pariatur cum autem dolores
+        necessitatibus repellendus non id. Animi quibusdam eos consequuntur optio. Voluptatibus molestiae, illo debitis
+        minima quam beatae aspernatur unde rerum, perferendis a asperiores ut nobis, repellendus cumque delectus enim
+        quos. Maxime ipsam suscipit magnam enim.
+    </p>
+
+</body>
+<style>
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        position: sticky;
+        top: 50%;
+    }
+
+    h1 {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .section-1 {
+        width: 100%;
+        height: 50vh;
+        /* vh is refered to viewport height */
+        background-color: bisque;
+    }
+
+    .section-2 {
+        width: 100%;
+        height: 50vh;
+        /* vh is refered to viewport height */
+        background-color: rebeccapurple;
+    }
+
+    .container {
+        width: 400px;
+        height: 400px;
+        border: 2px solid;
+        margin: 100px auto;
+        position: relative;
+
+    }
+
+    .a {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+
+    .box-1 {
+        background-color: red;
+        border: 1px solid;
+        top: 0;
+        left: 0;
+    }
+
+    .box-2 {
+        background-color: magenta;
+        border: 1px solid;
+        right: 0;
+        top: 0;
+    }
+
+    .box-3 {
+        background-color: black;
+        border: 1px solid;
+        bottom: 0;
+        left: 0;
+    }
+
+    .box-4 {
+        background-color: saddlebrown;
+        border: 1px solid;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    .box-5 {
+        background-color: wheat;
+        border: 1px solid;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+</style>
+
+</html>
