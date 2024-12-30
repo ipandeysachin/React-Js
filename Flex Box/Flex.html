@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1 b"> Box 1 </div>
+        <div class="box-2 b"> Box 2 </div>
+        <div class="box-3 b"> Box 3 </div>
+        <div class="box-4 b"> Box 4 </div>
+        <div class="box-5 b"> Box 5 </div>
+        <div class="box-6 b"> Box 6 </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 60%;
+        height: 400px;
+        border: 2px solid;
+        margin: 100px auto;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column-reverse; */
+
+        justify-content: start;
+        justify-content: end;
+        
+        gap: 10px;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        justify-content: space-evenly;
+        
+        justify-content: center;
+
+        align-items: start;
+        align-items: center;
+        align-items: end;
+        
+
+    }
+
+    .b {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        text-align: center;
+    }
+
+    .box-1 {
+        /* order: 1; */
+        height: 100px;
+    }
+    .box-2 {
+        /* order: 2; */
+        height: 150px;
+    }
+    .box-3 {
+        /* order: 3; */
+        height: 50px;
+    }
+    .box-4 {
+        /* order: 4; */
+        height: 250px;
+        align-self: flex-start
+    }
+    .box-5 {
+        /* order: 5; */
+        height: 200px;
+    }
+    .box-6 {
+        /* order: 6; */
+        height: 300px;
+    } 
+   
+
+
+</style>
+
+</html>
+
+<!-- CSS Selectors
+1. Universal Selector "*"
+2. Type Selector "div"
+3. Class Selector ".class"
+4. ID Selector "#id"
+5. Attribute Selector "[attribute]"
+6. Pseudo-class Selector ":pseudo-class"
+7. Pseudo-element Selector "::pseudo-element"
+8. Combinator Selector "div p"
+9. Grouping Selector "div, p"
+10. Descendant Selector "div p"
+11. Child Selector "div > p"
+12. Adjacent Sibling Selector "div + p"
+13. General Sibling Selector "div ~ p"
+14. Negation Selector ":not(p)"
+15. Attribute Value Selector "[attribute=value]"
+16. Attribute Starts With Selector "[attribute^=value]"
+17. Attribute Ends With Selector "[attribute$=value]"
+18. Attribute Contains Selector "[attribute*=value]"
+19. Attribute Space Separated Selector "[attribute~=value]"
+20. Attribute Hyphen Separated Selector "[attribute|=value]"
+21. First Child Selector "p:first-child"
+22. Last Child Selector "p:last-child"
+23. Nth Child Selector "p:nth-child(2)"
+24. Nth Last Child Selector "p:nth-last-child(2)"
+25. First Of Type Selector "p:first-of-type"
+26. Last Of Type Selector "p:last-of-type"
+27. Nth Of Type Selector "p:nth-of-type(2)"
+28. Nth Last Of Type Selector "p:nth-last-of-type(2)"
+29. Only Child Selector "p:only-child"
+30. Only Of Type Selector "p:only-of-type"
+31. Empty Selector "p:empty"
+32. Enabled Selector "input:enabled"
+33. Disabled Selector "input:disabled"
+34. Checked Selector "input:checked"
+35. Target Selector ":target"
+36. Root Selector ":root"
+37. Default Selector ":default"
+38. Valid Selector "input:valid"
+39. Invalid Selector "input:invalid"
+40. Required Selector "input:required"
+41. Optional Selector "input:optional"
+42. In Range Selector "input:in-range"
+43. Out Of Range Selector "input:out-of-range"
+44. Read Only Selector "input:read-only"
+45. Read Write Selector "input:read-write"
+46. Placeholder Selector "input::placeholder"
+47. Selection Selector "::selection"
+48. First Line Selector "p::first-line"
+49. First Letter Selector "p::first-letter"
+50. Before Selector "p::before"
+51. After Selector "p::after"
+52. Lang Selector "p:lang(en)"
+53. Not Selector "p:not(.class)"
+54. Focus Selector "input:focus"
+55. Hover Selector "a:hover"
+56. Active Selector "a:active"
+57. Link Selector "a:link"
+58. Visited Selector "a:visited"
+59. Out Of Range Selector "input:out-of-range"
+60. Full Screen Selector ":fullscreen"
+61. Full Screen Selector ":full-screen"
+62. Full Screen Selector ":full-screen"
+63. Full Screen Selector ":full-screen"
+64. Full Screen Selector ":full-screen"
+65. Full Screen Selector ":full-screen"
+66. Full Screen Selector ":full-screen"
+67. Full Screen Selector ":full-screen"
+
+CSS Properties
+1. align-content
+2. align-items
+3. align-self
+4. all
+5. animation
+6. animation-delay
+7. animation-direction
+8. animation-duration
+9. animation-fill-mode
+10. animation-iteration-count
+11. animation-name
+12. animation-play-state
+13. animation-timing-function
+14. backface-visibility
+15. background
+16. background-attachment
+17. background-blend-mode
+18. background-clip
+19. background-color
+20. background-image
+21. background-origin
+22. background-position
+23. background-repeat
+24. background-size
+25. border
+26. border-bottom
+27. border-bottom-color
+28. border-bottom-left-radius
+29. border-bottom-right-radius
+30. border-bottom-style
+31. border-bottom-width
+32. border-collapse
+33. border-color
+34. border-image
+35. border-image-outset
+36. border-image-repeat
+37. border-image-slice
+38. border-image-source
+39. border-image-width
+40. border-left
+41. border-left-color
+42. border-left-style
+43. border-left-width
+44. border-radius
+45. border-right
+46. border-right-color
+47. border-right-style
+48. border-right-width
+49. border-spacing
+50. border-style
+51. border-top
+52. border-top-color
+53. border-top-left-radius
+54. border-top-right-radius
+55. border-top-style
+56. border-top-width
+57. border-width
+58. bottom
+59. box-shadow
+60. box-sizing
+61. caption-side
+62. clear
+63. clip
+64. color
+65. column-count
+66. column-fill
+67. column-gap
+68. column-rule
+69. column-rule-color
+70. column-rule-style
+71. column-rule-width
+72. column-span
+73. column-width
+74. columns
+75. content
+76. counter-increment
+77. counter-reset
+78. cursor
+79. direction
+80. display
+81. empty-cells
+82. filter
+83. flex
+84. flex-basis
+85. flex-direction
+86. flex-flow
+87. flex-grow
+88. flex-shrink
+89. flex-wrap
+90. float
+91. font
+92. font-family
+93. font-size
+94. font-size-adjust
+95. font-stretch
+96. font-style
+97. font-variant
+98. font-weight
+99. height
+100. justify-content
+101. left
+102. letter-spacing
+103. line-height
+104. list-style
+105. list-style-image
+106. list-style-position
+107. list-style-type
+108. margin
+109. margin-bottom
+110. margin-left
+111. margin-right
+112. margin-top
+113. max-height
+114. max-width
+115. min-height
+116. min-width
+117. opacity
+118. order
+119. outline
+120. outline-color
+121. outline-offset
+122. outline-style
+123. outline-width
+124. overflow
+125. overflow-x
+126. overflow-y
+127. padding
+128. padding-bottom
+129. padding-left
+130. padding-right
+131. padding-top
+132. page-break-after
+133. page-break-before
+134. page-break-inside
+135. perspective
+136. perspective-origin
+137. position
+138. quotes
+139. resize
+140. right
+141. tab-size
+142. table-layout
+143. text-align
+144. text-align-last
+145. text-decoration
+146. text-decoration-color
+147. text-decoration-line
+148. text-decoration-style
+149. text-indent
+150. text-justify
+
+151. text-overflow
+152. text-shadow
+153. text-transform
+154. top
+155. transform
+156. transform-origin
+157. transform-style
+158. transition
+159. transition-delay
+160. transition-duration
+161. transition-property
+162. transition-timing-function
+163. unicode-bidi
+164. user-select
+165. vertical-align
+166. visibility
+167. white-space
+168. width
+169. word-break
+170. word-spacing
+171. word-wrap
+172. z-index
+
+CSS Units
+
+1. Absolute Lengths
+    1. cm
+    2. mm
+    3. in
+    4. px
+    5. pt
+    6. pc
+2. Relative Lengths 
+    1. em
+    2. ex
+    3. ch
+    4. rem
+    5. vw
+    6. vh
+    7. vmin
+    8. vmax
+3. Percentages
+4. Font Relative Lengths
+    1. % 
+    2. em
+    3. ex
+    4. ch
+    5. rem
+5. Viewport Percentage Lengths
+
+CSS Functions
+1. rgb()
+2. rgba()
+3. hsl()
+4. hsla()
+5. url()
+6. linear-gradient()
+7. radial-gradient()
+8. repeating-linear-gradient()
+9. repeating-radial-gradient()
+10. calc()
+11. attr()
+12. counter()
+13. counters()
+14. url()
+15. url()
+
+CSS Pseudo-classes
+1. :active
+2. :checked
+3. :default
+4. :dir()
+5. :disabled
+6. :empty
+7. :enabled
+8. :first
+9. :first-child
+10. :first-of-type
+11. :fullscreen
+12. :focus
+13. :hover
+14. :indeterminate
+15. :in-range
+16. :invalid
+17. :lang()
+18. :last-child
+19. :last-of-type
+20. :left
+21. :link
+22. :not()
+23. :nth-child()
+24. :nth-last-child()
+25. :nth-last-of-type()
+26. :nth-of-type()
+27. :only-child
+28. :only-of-type
+29. :optional
+30. :out-of-range
+31. :read-only
+32. :read-write
+33. :required
+34. :right
+35. :root
+36. :scope
+37. :target
+38. :valid
+39. :visited
+40. :where
+41. :is()
+42. :has()
+43. :host
+44. :host-context()
+45. :blank
+46. :current
+47. :past
+48. :future
+49. :user-error
+50. :blank
+51. :current
+52. :past
+53. :future
+54. :user-error
+55. :blank
+56. :current
+57. :past
+
+CSS Pseudo-elements
+1. ::after
+2. ::backdrop
+3. ::before
+4. ::cue
+5. ::cue-region
+6. ::first-letter
+7. ::first-line
+8. ::grammar-error
+9. ::marker
+10. ::placeholder
+11. ::selection
+12. ::spelling-error
+13. ::target-text
+14. ::slotted()
+15. ::part()
+16. ::file-selector-button
+17. ::inactive-selection
+18. ::read-only
+19. ::read-write
+20. ::placeholder
+21. ::selection
+22. ::first-line
+23. ::first-letter
+24. ::before
+25. ::after
+26. ::backdrop
+27. ::cue
+28. ::cue-region
+29. ::grammar-error
+30. ::marker
+31. ::spelling-error
+
+CSS Media Queries
+1. all
+2. print
+3. screen
+4. speech
+5. width
+6. min-width
+7. max-width
+8. height
+9. min-height
+10. max-height
+11. aspect-ratio
+12. min-aspect-ratio
+13. max-aspect-ratio
+14. orientation
+15. landscape
+16. portrait
+17. resolution
+18. min-resolution
+19. max-resolution
+20. color
+21. min-color
+22. max-color
+23. color-index
+24. min-color-index
+25. max-color-index
+26. monochrome
+27. min-monochrome
+28. max-monochrome
+29. grid
+30. min-grid
+31. max-grid
+32. update
+33. scan
+34. min-device-width
+35. max-device-width
+36. min-device-height
+37. max-device-height
+38. min-device-aspect-ratio
+39. max-device-aspect-ratio
+40. device-aspect-ratio
+41. min-device-pixel-ratio
+42. max-device-pixel-ratio
+43. min-resolution
+44. max-resolution
+45. min-device-width
+46. max-device-width
+47. min-device-height
+48. max-device-height
+49. min-device-aspect-ratio
+50. max-device-aspect-ratio
+51. device-aspect-ratio
+52. min-device-pixel-ratio
+53. max-device-pixel-ratio
+54. min-resolution
+55. max-resolution
+56. min-color
+57. max-color
+
+
+CSS At-rules
+1. @charset
+2. @import
+3. @namespace
+4. @media
+5. @supports
+6. @document
+7. @page
+8. @font-face
+9. @keyframes
+10. @viewport
+11. @counter-style
+12. @font-feature-values
+13. @swash
+14. @ornaments
+15. @annotation
+16. @stylistic
+17. @styleset
+18. @character-variant
+19. @historical-forms
+20. @styleset
+21. @annotation
+22. @stylistic
+23. @ornaments
+24. @swash
+25. @styleset
+26. @annotation
+27. @stylistic
+28. @ornaments
+29. @swash
+30. @styleset
+ -->
