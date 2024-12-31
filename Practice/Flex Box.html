@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="box1">
+            <i class="fa-brands fa-algolia"></i>
+        </div>
+        <div class="box2">
+            <a href=""> Link </a>
+            <a href=""> Link </a>
+            <a href=""> Link </a>
+            <a href=""> Link </a>
+        </div>
+        <div class="box3">
+            <button> Sign In </button>
+            <button class="btn-1"> Sign Up </button>
+        </div>
+    </header>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    header {
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center; */
+
+        /* height: 60px;  height of the header */ 
+        background-color: #1F2937;
+        color: wheat;        
+        display: flex;
+        padding: 20px 50px;
+        justify-content: space-between;
+    }
+
+    .box1 > i {
+        font-size: 23px;
+    }  
+      
+    .box2 {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .box3 {
+        display: flex;
+        gap: 20px;
+    }
+
+    .box2 > a {
+        text-decoration: none;
+        color: wheat;
+        font-size: 18px;
+    }
+
+
+    .box3 > button.btn-1 {
+        padding: 10px 20px;
+        background-color: #60A5FA;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .box3 > button {
+        /* padding: 10px 20px; */
+        background-color: transparent;
+        color: white;
+        border: 0px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+</html>
